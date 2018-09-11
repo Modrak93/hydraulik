@@ -1,0 +1,25 @@
+.contact-header {
+    background: @red;  /* fallback for old browsers */
+    background: linear-gradient(50deg, rgba(244, 0, 2, 1) 56.168741809850555%,rgba(219, 53, 53, 1) 79.65337113789549%);
+    height: 35vh;
+}
+
+.sec-contact {
+    .address {
+        .tel {
+            font-size: 20px;
+        }
+    }
+    .map {
+        max-width: 100%;
+        height: auto;
+        border: 1px solid @blue;
+        iframe {
+            width: 100%;
+            min-height: 400px;
+            @media (max-width: 991px) {
+                min-height: 300px
+            }
+        }
+    }
+}

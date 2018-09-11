@@ -1,0 +1,74 @@
+.pagination {
+    padding-top: 30px;
+}
+
+.blog-header {
+    background-image: url(../images/toa-heftiba-578099-unsplash.jpg);
+    height: 40vh;
+    background-position: center 65%;
+    .container-fluid {
+        background-color: darkslategray;
+    }
+}
+
+.post-gallery {
+    background-color: @light;
+    padding: 5px;
+    .gallery-item {
+        overflow: hidden;
+        height: 110px;
+        margin: 5px;
+        position: relative;
+        img {
+            position: absolute;
+            bottom: -5%;
+            transition: linear .1s;
+            &:hover {
+                opacity: .7;
+            }
+        }
+    }
+}
+
+// MASONRY BLOG
+.masonry-item {
+    margin: 15px 5px;
+    background-color: @light;
+    border-radius: 5%;
+    border: 1px solid @dark;
+    .m-head {
+        border-radius: 5%;
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5%;
+        }
+    }
+    .m-body {
+        padding: 10px;
+        .m-title {
+            a {
+                h6 {
+                    font-size: 25px;
+                    font-weight: 300;
+                    color: @dark;
+                }
+            }
+        }
+        .m-text {
+            p {
+                font-weight: 300;
+            }
+        }
+        .m-footer {
+            border-top: 1px solid @dark;
+            padding: 5px 0;
+            margin-top: 20px;
+            color: @dark;
+            a {
+                color: @dark;
+            }
+        }
+    }
+}
+    

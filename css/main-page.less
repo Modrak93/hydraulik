@@ -1,0 +1,148 @@
+header {
+    h1, 
+    h2,
+    h3 {
+        font-size: 35px;
+        font-weight: 400;
+        color: @white;
+        @media @min992 {
+            font-size: 64px;
+        }
+    }
+    p {
+        color: @white;
+        font-weight: 300;
+        font-size: 16px;
+        @media @min992 {
+            font-size: 24px;
+        }
+    }
+    a.btn {
+        text-transform: uppercase;
+    }
+}
+
+.main-page {
+    h1,
+    h2,
+    h3 {
+      color: @red;
+      text-transform: uppercase;
+    }
+}
+
+// Slider from file index.html
+
+.main-header {
+    height: 85vh;
+    background-position: center 20%;
+    .gradient {
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        background: linear-gradient(50deg, rgba(244, 0, 2, 0.5) 56.168741809850555%,rgba(219, 53, 53,0.5) 79.65337113789549%)
+    }
+    .row {
+        height: 100%;
+    }
+    .main-slider {
+        color: @white;
+        text-align: center;
+        .slide1 {
+            background-image: url(../images/klima2.jpg);
+        }
+        .slide2 {
+            background-image: url(../images/tlo1.jpg);
+            background-position: center;
+        }
+        .slide3 {
+            background-image: url(../images/tlo3.png);
+            background-position: center;
+        }
+        .single-slide {
+            height: 85vh;
+            position: relative;
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: flex !important;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            .slide-content {
+                position: relative;
+            }
+            @media @min992 {
+                h3 {
+                    padding-bottom : 30px;
+                }
+            }
+        }
+    }
+}
+
+.main-header-3 {
+    height: 100vh;
+    background: #ff00cc;  /* fallback for old browsers */  /* Chrome 10-25, Safari 5.1-6 */
+    background: -webkit-linear-gradient(left, #333399, #ff00cc);
+    background: -o-linear-gradient(left, #333399, #ff00cc);
+    background: linear-gradient(to right, #333399, #ff00cc); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    @media @min992 {
+        height: 70vh;
+    }
+    .static-header {
+        height: 100%;
+        text-align: center;
+    }
+}
+
+// CONTENT
+
+
+//-- OFFER
+.sec-main-offer {
+    .card {
+        border-radius: 0;
+        transition: ease-in .15s;
+        &:hover {
+            box-shadow: 0px 0px 15px 0px @gray;
+        }
+        .card-img {
+            overflow: hidden;
+            max-height: 140px;
+            border-radius: 0;
+        }
+        .card-body {
+            min-height: 256px;
+            h4 {
+                color: @red;
+            }
+            p {
+                color: @dark;
+                font-size: 15px;
+            }
+            .offer-button {
+                color: @red;
+            }
+        }
+    }
+}
+
+.sec-main-about {
+    background-color: @light;
+}
+
+
+.sec-main-info {
+    background-color: @light;
+    .info-desc {
+        h5 {
+            color: @red;
+            font-weight: 700;
+            font-size: 24px;
+            @media @min992 {
+                font-size: 40px;
+            }
+        }
+    }
+}
+
