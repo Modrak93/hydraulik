@@ -317,6 +317,7 @@ header a.btn {
 }
 .sec-main-offer .card .card-body h4 {
   color: #f40002;
+  font-size: 20px;
 }
 .sec-main-offer .card .card-body p {
   color: #a5a5a5;
@@ -324,6 +325,9 @@ header a.btn {
 }
 .sec-main-offer .card .card-body .offer-button {
   color: #f40002;
+}
+.sec-main-offer .slick-dots {
+  bottom: 0;
 }
 .sec-main-about {
   background-color: #ebf0f6;
@@ -487,6 +491,9 @@ header a.btn {
 .sec-gallery .gallery-items .g-item .g-desc p {
   font-weight: 300;
 }
+.sec-rec .rec-items .r-item {
+  margin: 25px 0;
+}
 .team-header {
   background: #f40002;
   /* fallback for old browsers */
@@ -531,6 +538,10 @@ header a.btn {
 }
 .about-offer {
   background-color: #ebf0f6;
+}
+.about-offer .card .card-body {
+  min-height: 220px;
+  height: 220px;
 }
 .sec-member .member-desc {
   color: #3d3d3d;
