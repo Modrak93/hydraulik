@@ -186,9 +186,9 @@ footer .footer-social a {
 }
 .sub-menu li a {
   padding: 0 10px;
+  display: block;
 }
 .sub-menu li a:hover {
-  display: block;
   background-color: #a5a5a5;
   color: #ebf0f6;
 }
